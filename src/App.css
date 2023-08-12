@@ -4,13 +4,17 @@ body{
   background-color: black;
 }
 
+
+ /* Navbar */
+
+ 
 .neon-text-container {
   display: flex;
-  padding-top: 220px;
-  padding-left: 450px;
+  padding-top: 260px;
+  padding-left: 400px;
 }
 
-.neon-text {
+.neon-text {  
   font-size: 85px;
   color: #fff;
   text-align: center;
@@ -34,7 +38,9 @@ body{
 }
 
 .slogan{
+  width: 500px;
   font-size: 40px;
+  margin-left: 20px;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: whitesmoke;
@@ -45,19 +51,20 @@ body{
 .button {
   width: 250px;
   height: 60px;
-  margin-left: -480px;
-  margin-top: 280px;
-  background-color: transparent; /* Change this to the desired button color */
-  color: #fff; /* Change this to the desired text color */
+  margin-left: -500px;
+  margin-top: 250px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
 .button:hover {
+  color: white;
   background-color: #1E1E1E; /* Change this to the desired background color on hover */
   border-color: #fff; /* Change this to the desired border color on hover */
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
@@ -73,7 +80,7 @@ body{
 .saleP{
   color: white;
   font-size: larger;
-  padding-left: 490px;
+  padding-left: 550px;
   margin-top: -225px;
   font-weight: 300;
 }
@@ -82,18 +89,19 @@ body{
   width: 250px;
   height: 60px;
   margin-top: 50px;
-  margin-left: 490px;
-  background-color: transparent; /* Change this to the desired button color */
-  color: #fff; /* Change this to the desired text color */
+  margin-left: 550px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
 .button2:hover {
+  color: white;
   background-color: #1E1E1E; /* Change this to the desired background color on hover */
   border-color: #fff; /* Change this to the desired border color on hover */
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
@@ -102,7 +110,7 @@ body{
 /* Cards */
 
 .card1{
-  margin-top: 200px;
+  margin-top: 160px;
   margin-left: -200px;
   width: 450px;
   height: 250px;
@@ -121,7 +129,7 @@ body{
 }
 
 .card2{
-  margin-top: 200px;
+  margin-top: 160px;
   margin-left: 100px;
   width: 450px;
   height: 250px;
@@ -140,7 +148,7 @@ body{
 }
 
 .card3{
-  margin-top: 500px;
+  margin-top: 460px;
   margin-left: -1000px;
   width: 450px;
   height: 250px;
@@ -159,7 +167,7 @@ body{
 }
 
 .card4{
-  margin-top: 500px;
+  margin-top: 460px;
  margin-left: 100px;
   width: 450px;
   height: 250px;
@@ -277,18 +285,483 @@ body{
   height: 60px;
   margin-top: 50px;
   margin-left: 370px;
-  background-color: transparent; /* Change this to the desired button color */
-  color: #fff; /* Change this to the desired text color */
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
 
 .button3:hover {
+  color: white;
   background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+/* Informational Page/ Products page */
+
+.Body{
+  background-color: black;
+  height: 1000px;
+  width: 100%;
+}
+
+.neon-slide {
+  position: relative;
+  padding-bottom: 50px; /* Adjust this value as needed */
+}
+
+.neon-text2 {
+  padding-left: 100px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+}
+
+.Carousel{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.Bottle{
+  padding-top: 50px;
+}
+
+.button4{
+  width: 250px;
+  height: 60px;
+  margin-left: 610px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button4:hover {
+  color: white;
+  background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+.button5{
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 610px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button5:hover {
+  color: white;
+  background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+/* this is the style for the container inside the card.js */
+
+
+
+.ShopT1{
+  margin-top: 180px;
+  margin-left: 150px;
+  font-size: 60px;
+  width: 300px;
+  color: white;
+}
+
+.ShopT2{
+  padding-bottom: 100px;
+  margin-top: -280px;
+  margin-left: 800px;
+  font-size: 70px;
+  width: 500px;
+  color: white;
+}
+
+.container {
+  margin-left: 200px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family: "Roboto", sans-serif;
+  gap: 50px;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family: "Roboto", sans-serif;
+  gap: 50px;
+}
+
+.container3 {
+  margin-top: -150px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family: "Roboto", sans-serif;
+  gap: 50px;
+}
+
+
+/* ======================================================== */
+.card {
+  transform-style: preserve-3d;
+  position: relative;
+  padding: 25px;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(
+    25deg,
+    rgba(173, 54, 30, 1) 0%,
+    rgba(30, 30, 30, 1) 86%
+  );
+  transition: all 0.1s ease;
+}
+.sneaaker-img {
+  position: relative;
+  width: 90%;
+  transition: all 0.5s ease;
+}
+.title,
+.card p {
+  width: 100%;
+  color: rgb(220, 220, 220);
+}
+.sizes-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.sizes-box li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(220, 220, 220);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sizes-box li:hover {
+  background-color: rgb(134, 134, 134);
+}
+.button-box {
+  width: 100%;
+}
+.purchase {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: rgba(248, 177, 60, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.purchase:hover {
+  background-color: rgb(222, 157, 54);
+}
+
+
+/* INformation Page */
+
+
+.IntoAbout{
+  font-weight: 50;
+  font-size: 28px;
+  color: white;
+  width: 850px;
+  position: absolute;
+  top: 200px;
+  margin-left: 450px;
+}
+
+.Mission{
+  padding-top: 200px;
+  height: 1105px;
+}
+
+.OurMission{
+  letter-spacing: 2px;
+  font-size: 25px;
+  width: 650px;
+  font-weight: 100;
+  color: white;
+  margin-left: 130px;
+}
+
+.FormInfo{
+  height: 500px;
+  width: 1000px;
+  padding-top: 1700px;
+  margin-left: 400px;
+}
+
+.Input1 {
+  height: 15;
+  width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url('../src/Pages/Images/path-to-your-texture-image.png');
+  background-size: 500px;
+  background-blend-mode: overlay;
+  color: white;
+  outline: none;
+}
+
+.Input2 {
+  height: 200px;
+  width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url('../src/Pages/Images/path-to-your-texture-image.png');
+  background-size: 500px;
+  background-blend-mode: overlay;
+  color: white;
+  outline: none;
+}
+
+.Input1::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Input1:focus {
+  border-color: #AD361E;
+  box-shadow: 0 0 5px rgba(173, 54, 30, 0.5);
+}
+
+.button7{
+  width: 250px;
+  height: 70px;
+  margin-top: 30px;
+  margin-left: 200px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button7:hover {
+  color: white;
+  background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+.button6{
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 450px;
+  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button6:hover {
+  color: white;
+  background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+.Info{
+  margin-left: 490px;
+  text-align: center;
+  width: 500px;
+  height: 100px;
+}
+
+.NeonText {
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 36px;
+  color: white; /* Neon orange color */
+  text-align: center;
+  padding-top: 25px;
+  background: rgba(255, 165, 0, 0.1);
+  border: 2px solid transparent; /* Transparent border to start */
+  animation: neonGlow 2.5s ease-in-out infinite alternate, borderGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+      text-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+  }
+  to {
+      text-shadow: 0 0 20px #AD361E, 0 0 40px #AD361E, 0 0 60px #AD361E;
+  }
+}
+
+@keyframes borderGlow {
+  from {
+      border-color: transparent;
+      box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+  }
+  to {
+      border-color: #AD361E;
+      box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+  }
+}
+
+
+/* Single Projects Page */
+
+.SinglePage{
+ width: 100%;
+ height: 1650px;
+ background-color: black;
+}
+
+.container4 {
+  top: 160px;
+  margin-left: 250px;
+  transform-style: preserve-3d;
+  position: relative;
+  padding: 25px;
+  width: 950px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(
+    25deg,
+    rgba(173, 54, 30, 1) 0%,
+    rgba(30, 30, 30, 1) 86%
+  );
+  transition: all 0.1s ease;
+}
+
+.ProductSingle{
+  width: 500px;
+  margin-left: -150px;
+  margin-top: -20px;
+}
+
+.TitleSingle{
+  color: #AD361E;
+  font-size: 80px;
+  margin-left: 450px;
+  margin-top: -410px;
+  letter-spacing: 15px;
+}
+
+.NikeAd{
+  font-size: medium;
+  width: 400px;
+  margin-left: 450px;
+  margin-top: 20px;
+  color: white;
+}
+
+.NikeDiscription{
+  color: #1E1E1E;
+  margin-left: 450px;
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 35px;
+}
+
+.button8 {
+  width: 300px;
+  height: 80px;
+  margin-top: -300px;
+ margin-left: 750px;
+  background-color: transparent; /* Change this to the desired button color */
+  color: black; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(222, 157, 54);
+}
+
+.button8:hover {
+  color: white;
+  background-color: #1E1E1E; /* Change this to the desired background color on hover */
+  border-color: #fff; /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+}
+
+.button9 {
+  width: 300px;
+  height: 80px;
+  margin-top: 120px;
+ margin-left: 350px;
+  background-color: transparent; /* Change this to the desired button color */
+  color: White; /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button9:hover {
+  color: black;
+  background-color: rgb(222, 157, 54); /* Change this to the desired background color on hover */
   border-color: #fff; /* Change this to the desired border color on hover */
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
 }

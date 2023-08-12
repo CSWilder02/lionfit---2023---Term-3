@@ -17,7 +17,7 @@ function BasicNavbar() {
       const breakpoint = 100; // Adjust this value to set when the background color should change
 
       if (currentScrollY > breakpoint) {
-        setNavbarBackground('#1E1E1E');
+        setNavbarBackground('#0F0F0F');
       } else {
         setNavbarBackground('transparent');
       }
@@ -45,23 +45,23 @@ function BasicNavbar() {
           <img style={{ width: '80px', marginLeft: '20px' }} src={logo} alt="Logo" />
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link style={{ color: 'white', marginLeft: '450px', textDecoration: 'none' }} href="/">
+          <Nav.Link style={{ color: 'white', marginLeft: '550px', paddingTop: '20px', textDecoration: 'none' }} href="/">
             HOME
           </Nav.Link>
-          <Nav.Link style={{ color: 'white', marginLeft: '90px', textDecoration: 'none' }} href="/information">
+          <Nav.Link style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }} href="/product">
+            PRODUCT
+          </Nav.Link>
+          <Nav.Link style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }} href="/information">
             ABOUT
           </Nav.Link>
-          <Nav.Link style={{ color: 'white', marginLeft: '90px', textDecoration: 'none' }} href="/product">
-            CHECKOUT
-          </Nav.Link>
-          <Nav.Link style={{ color: 'white', marginLeft: '90px', textDecoration: 'none' }} href="/">
+          <Nav.Link style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }} href="/">
           <img
               src={insta}
               alt="Time"
               style={{ width: '25px', height: '25px', marginRight: '5px' }}
             />
           </Nav.Link>
-          <Nav.Link style={{ color: 'white', marginLeft: '20px', textDecoration: 'none' }} href="/">
+          <Nav.Link style={{ color: 'white', marginLeft: '20px', paddingTop: '20px', textDecoration: 'none' }} href="/">
           <img
               src={profile}
               alt="Time"

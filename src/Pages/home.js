@@ -19,7 +19,7 @@ import Footer from './Images/Footer.png'
 
 function App() {
   return (
-<div className="neon-text-container" style={{backgroundImage: `url(${Background})`, width: '1481px', height: '3520px', marginTop: '-20px', backgroundRepeat: 'no-repeat', backgroundColor: 'black'}}>
+<div className="neon-text-container" style={{backgroundImage: `url(${Background})`,backgroundSize: '1700px', width: '1481px', height: '3700px', marginTop: '-20px', backgroundRepeat: 'no-repeat', backgroundColor: 'black'}}>
   <div>
   <h1 className="neon-text">BE PATIENT</h1>
   <br />
@@ -29,11 +29,11 @@ function App() {
     <button className="button">ABOUT LIONFIT</button>
   </div> <br />
   <div className='machineimg'>
-  <img style={{width: '1000px'}} src={SaleMachine} />
+  <img style={{width: '1100px'}} src={SaleMachine} />
   <p className='saleP'>Since we have a ton of new & existing equipment <br /> coming in, we are having a BIG SALE on our fully <br /> equipped body workout sets. </p>
   <button className="button2">READ MORE</button>
   </div>
-  <div className="neon-text-container" style={{backgroundImage: `url(${BackImg})`, width: '1481px', marginTop: '780px', marginLeft: '-1200px', backgroundRepeat: 'no-repeat'}}>
+  <div className="neon-text-container" style={{backgroundImage: `url(${BackImg})`, width: '1600px', marginTop: '850px', marginLeft: '-1220px', backgroundRepeat: 'no-repeat'}}>
     <div className='card1'>
     <img style={{width: '80px', marginLeft: '165px', marginTop: '20px'}} src={Dumbell} />
     <h2 className='cardText'>Dumbells</h2>
@@ -79,6 +79,8 @@ function App() {
             </div>
             <button className="button3">VIEW MORE</button>
           </div>
+
+
 
 <div>
 <img style={{width: '1150px', marginTop: '30px', marginLeft: '-100px' }} src={Footer} />
