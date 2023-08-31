@@ -24,7 +24,7 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
     setXRotation((y / height) * mult);
     setYRotation((x / width) * mult);
   }
-  
+
   function handleMouseEnter() {
     const img = imgRef.current;
     const title = titleRef.current;
@@ -37,7 +37,7 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
     purchase.style.transform = "translateZ(75px)";
     desc.style.transform = "translateZ(75px)";
   }
-  
+
   function handleMouseLeave() {
     setXRotation(0);
     setYRotation(0);
@@ -64,12 +64,13 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
       onMouseLeave={handleMouseLeave}
     >
       <img
+        style={{ height: '250px' }}
         ref={imgRef}
         src={imgSrc}
         alt={title}
         className="sneaaker-img"
       />
-      <h1 className="title" ref={titleRef}>
+      <h1 className="title" style={{ fontSize: '35px', paddingTop: '15px' }} ref={titleRef}>
         {title}
       </h1>
       <p ref={descRef}>
@@ -82,11 +83,11 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
       </ul>
       <div className="button-box" ref={purchaseRef}>
         <Link to="/singleproduct">
-        <button className="purchase">
+          <button className="purchase">
             VIEW INFO
           </button>
         </Link>
-         
+
       </div>
     </div>
   );

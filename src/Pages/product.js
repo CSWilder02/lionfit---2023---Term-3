@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../App.css';
 
+
 import Card from './card';
 
 import Promo from './Images/Promo1.png'
@@ -27,15 +28,15 @@ function Product() {
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     },
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/Converse.png"),
+      title: "Converse Chuck Taylor",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["38", "40", "42", "44"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     }, 
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/conversePride.png"),
+      title: "Converse Pride",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["38", "40", "42", "44"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
@@ -44,48 +45,48 @@ function Product() {
 
   const cards2 = [
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/Recharge.png"),
+      title: "Legion Recharge",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["80", "100", "250"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     },
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/Preworkout.png"),
+      title: "Optimum Nutrition",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["80", "120", "200"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     }, 
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/Dietry.png"),
+      title: "RAZE",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["100", "120", "150"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     },
   ];
 
   const cards3 = [
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/CreatineProtein.png"),
+      title: "Body Attack",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["80", "100", "200"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     },
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/caseinchoc.png"),
+      title: "USN Casien",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["80", "100", "250"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     }, 
     {
-      imgSrc: require("./Images/Nike.png"),
-      title: "Nike Dunk High",
+      imgSrc: require("./Images/CreatineMono.png"),
+      title: "Fitness Standard",
       description: "Nike Dunk High is a high-top version...",
-      sizes: ["38", "40", "42", "44"],
+      sizes: ["80", "100", "150"],
       link: "LionFit/lionfit/src/Pages/singleproducts.js"
     },
   ];
@@ -165,7 +166,7 @@ function Product() {
         </div>
 
         <div>
-          <img style={{width: '1150px', marginTop: '1230px', marginLeft: '120px' }} src={Footer} />
+          <img style={{width: '1150px', marginTop: '1200px', marginLeft: '120px' }} src={Footer} />
         </div>
       </div>
     </div>

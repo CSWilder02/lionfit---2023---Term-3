@@ -1,20 +1,20 @@
-body{
+body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: black;
 }
 
 
- /* Navbar */
+/* Navbar */
 
- 
+
 .neon-text-container {
   display: flex;
   padding-top: 260px;
   padding-left: 400px;
 }
 
-.neon-text {  
+.neon-text {
   font-size: 85px;
   color: #fff;
   text-align: center;
@@ -30,6 +30,7 @@ body{
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E,
       0 0 80px #AD361E, 0 0 100px #AD361E, 0 0 150px #AD361E;
   }
+
   to {
     opacity: 1;
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E, 0 0 80px #AD361E,
@@ -37,11 +38,12 @@ body{
   }
 }
 
-.slogan{
+.slogan {
   width: 500px;
   font-size: 40px;
   margin-left: 20px;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: whitesmoke;
 }
@@ -53,8 +55,10 @@ body{
   height: 60px;
   margin-left: -500px;
   margin-top: 250px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -65,19 +69,22 @@ body{
 
 .button:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
 /* Sale Banner */
 
-.machineimg{
+.machineimg {
   margin-top: 600px;
   margin-left: -800px;
 }
 
-.saleP{
+.saleP {
   color: white;
   font-size: larger;
   padding-left: 550px;
@@ -85,13 +92,15 @@ body{
   font-weight: 300;
 }
 
-.button2{
+.button2 {
   width: 250px;
   height: 60px;
   margin-top: 50px;
   margin-left: 550px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -102,14 +111,17 @@ body{
 
 .button2:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
 /* Cards */
 
-.card1{
+.card1 {
   margin-top: 160px;
   margin-left: -200px;
   width: 450px;
@@ -117,18 +129,17 @@ body{
   padding: 1rem;
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #AD361E, 
+  border-image:
+    linear-gradient(to bottom,
+      #AD361E,
       rgba(0, 0, 0, 0),
-      #AD361E
-    ) 1 100%;
-    background-color: #1E1E1E; /* Red background without opacity */
+      #AD361E) 1 100%;
+  background-color: #1E1E1E;
+  /* Red background without opacity */
   opacity: 0.6;
 }
 
-.card2{
+.card2 {
   margin-top: 160px;
   margin-left: 100px;
   width: 450px;
@@ -136,18 +147,17 @@ body{
   padding: 1rem;
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #AD361E, 
+  border-image:
+    linear-gradient(to bottom,
+      #AD361E,
       rgba(0, 0, 0, 0),
-      #AD361E
-    ) 1 100%;
-    background-color: #1E1E1E; /* Red background without opacity */
+      #AD361E) 1 100%;
+  background-color: #1E1E1E;
+  /* Red background without opacity */
   opacity: 0.6;
 }
 
-.card3{
+.card3 {
   margin-top: 460px;
   margin-left: -1000px;
   width: 450px;
@@ -155,37 +165,35 @@ body{
   padding: 1rem;
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #AD361E, 
+  border-image:
+    linear-gradient(to bottom,
+      #AD361E,
       rgba(0, 0, 0, 0),
-      #AD361E
-    ) 1 100%;
-    background-color: #1E1E1E; /* Red background without opacity */
+      #AD361E) 1 100%;
+  background-color: #1E1E1E;
+  /* Red background without opacity */
   opacity: 0.6;
 }
 
-.card4{
+.card4 {
   margin-top: 460px;
- margin-left: 100px;
+  margin-left: 100px;
   width: 450px;
   height: 250px;
   padding: 1rem;
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #AD361E, 
+  border-image:
+    linear-gradient(to bottom,
+      #AD361E,
       rgba(0, 0, 0, 0),
-      #AD361E
-    ) 1 100%;
-    background-color: #1E1E1E; /* Red background without opacity */
+      #AD361E) 1 100%;
+  background-color: #1E1E1E;
+  /* Red background without opacity */
   opacity: 0.6;
 }
 
-.cardText{
+.cardText {
   color: white;
   font-weight: 300;
   text-align: center;
@@ -194,12 +202,12 @@ body{
 
 /* Product */
 
-.ProductShopList{
+.ProductShopList {
   margin-top: 880px;
   margin-left: -1000px;
 }
 
-.ShopTitle{
+.ShopTitle {
   color: white;
   font-weight: 400;
   font-size: 40px;
@@ -211,7 +219,8 @@ body{
 }
 
 .neon-text2 {
-  margin-left: -80px;
+  margin-top: 20px;
+  margin-left: -820px;
   font-size: 70px;
   color: #fff;
   text-align: center;
@@ -227,6 +236,7 @@ body{
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E,
       0 0 80px #AD361E, 0 0 100px #AD361E, 0 0 150px #AD361E;
   }
+
   to {
     opacity: 1;
     text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E, 0 0 80px #AD361E,
@@ -234,21 +244,21 @@ body{
   }
 }
 
-.ProductInfo{
+.ProductInfo {
   color: white;
   font-size: 22px;
 }
 
 /* Carousel */
 
-.cardPro{
+.cardPro {
   background-color: transparent;
   width: 350px;
   height: 450px;
   margin-top: 50px;
 }
 
-.cardPro2{
+.cardPro2 {
   background-color: transparent;
   width: 350px;
   height: 450px;
@@ -257,7 +267,7 @@ body{
   margin-top: -450px;
 }
 
-.cardPro3{
+.cardPro3 {
   background-color: transparent;
   width: 350px;
   height: 450px;
@@ -266,7 +276,7 @@ body{
   margin-top: -450px;
 }
 
-.pro1duct{
+.pro1duct {
   color: white;
   font-weight: 300;
   font-size: 20px;
@@ -274,19 +284,21 @@ body{
   padding-left: 70px;
 }
 
-.price{
+.price {
   color: white;
   font-weight: 300;
   padding-left: 70px;
 }
 
-.button3{
+.button3 {
   width: 250px;
   height: 60px;
   margin-top: 50px;
   margin-left: 370px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -297,14 +309,17 @@ body{
 
 .button3:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
 /* Informational Page/ Products page */
 
-.Body{
+.Body {
   background-color: black;
   height: 1000px;
   width: 100%;
@@ -312,7 +327,8 @@ body{
 
 .neon-slide {
   position: relative;
-  padding-bottom: 50px; /* Adjust this value as needed */
+  padding-bottom: 50px;
+  /* Adjust this value as needed */
 }
 
 .neon-text2 {
@@ -322,21 +338,23 @@ body{
   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
 }
 
-.Carousel{
+.Carousel {
   width: 100%;
   padding-top: 100px;
 }
 
-.Bottle{
+.Bottle {
   padding-top: 50px;
 }
 
-.button4{
+.button4 {
   width: 250px;
   height: 60px;
   margin-left: 610px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -347,18 +365,23 @@ body{
 
 .button4:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
-.button5{
+.button5 {
   width: 250px;
   height: 60px;
   margin-top: 30px;
   margin-left: 610px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -369,16 +392,19 @@ body{
 
 .button5:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
 /* this is the style for the container inside the card.js */
 
 
 
-.ShopT1{
+.ShopT1 {
   margin-top: 180px;
   margin-left: 150px;
   font-size: 60px;
@@ -386,7 +412,7 @@ body{
   color: white;
 }
 
-.ShopT2{
+.ShopT2 {
   padding-bottom: 100px;
   margin-top: -280px;
   margin-left: 800px;
@@ -402,7 +428,7 @@ body{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   gap: 50px;
 }
@@ -413,7 +439,7 @@ body{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   gap: 50px;
 }
@@ -425,7 +451,7 @@ body{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   gap: 50px;
 }
@@ -444,30 +470,33 @@ body{
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background: linear-gradient(
-    25deg,
-    rgba(173, 54, 30, 1) 0%,
-    rgba(30, 30, 30, 1) 86%
-  );
+  background: linear-gradient(25deg,
+      rgba(173, 54, 30, 1) 0%,
+      rgba(30, 30, 30, 1) 86%);
   transition: all 0.1s ease;
 }
+
 .sneaaker-img {
   position: relative;
   width: 90%;
   transition: all 0.5s ease;
 }
+
 .title,
 .card p {
   width: 100%;
   color: rgb(220, 220, 220);
 }
+
 .sizes-box {
+  margin-left: -30px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
 }
+
 .sizes-box li {
   list-style: none;
   cursor: pointer;
@@ -479,12 +508,15 @@ body{
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .sizes-box li:hover {
   background-color: rgb(134, 134, 134);
 }
+
 .button-box {
   width: 100%;
 }
+
 .purchase {
   cursor: pointer;
   width: 100%;
@@ -499,6 +531,7 @@ body{
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .purchase:hover {
   background-color: rgb(222, 157, 54);
 }
@@ -507,7 +540,7 @@ body{
 /* INformation Page */
 
 
-.IntoAbout{
+.IntoAbout {
   font-weight: 50;
   font-size: 28px;
   color: white;
@@ -517,12 +550,12 @@ body{
   margin-left: 450px;
 }
 
-.Mission{
+.Mission {
   padding-top: 200px;
   height: 1105px;
 }
 
-.OurMission{
+.OurMission {
   letter-spacing: 2px;
   font-size: 25px;
   width: 650px;
@@ -531,7 +564,7 @@ body{
   margin-left: 130px;
 }
 
-.FormInfo{
+.FormInfo {
   height: 500px;
   width: 1000px;
   padding-top: 1700px;
@@ -577,13 +610,15 @@ body{
   box-shadow: 0 0 5px rgba(173, 54, 30, 0.5);
 }
 
-.button7{
+.button7 {
   width: 250px;
   height: 70px;
   margin-top: 30px;
   margin-left: 200px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -594,18 +629,23 @@ body{
 
 .button7:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
-.button6{
+.button6 {
   width: 250px;
   height: 60px;
   margin-top: 30px;
   margin-left: 450px;
-  background-color: rgb(222, 157, 54); /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  background-color: #1E1E1E;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -616,12 +656,15 @@ body{
 
 .button6:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
-.Info{
+.Info {
   margin-left: 490px;
   text-align: center;
   width: 500px;
@@ -632,41 +675,45 @@ body{
   letter-spacing: 5px;
   font-weight: 400;
   font-size: 36px;
-  color: white; /* Neon orange color */
+  color: white;
+  /* Neon orange color */
   text-align: center;
   padding-top: 25px;
   background: rgba(255, 165, 0, 0.1);
-  border: 2px solid transparent; /* Transparent border to start */
+  border: 2px solid transparent;
+  /* Transparent border to start */
   animation: neonGlow 2.5s ease-in-out infinite alternate, borderGlow 2.5s ease-in-out infinite alternate;
 }
 
 @keyframes neonGlow {
   from {
-      text-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+    text-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
   }
+
   to {
-      text-shadow: 0 0 20px #AD361E, 0 0 40px #AD361E, 0 0 60px #AD361E;
+    text-shadow: 0 0 20px #AD361E, 0 0 40px #AD361E, 0 0 60px #AD361E;
   }
 }
 
 @keyframes borderGlow {
   from {
-      border-color: transparent;
-      box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+    border-color: transparent;
+    box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
   }
+
   to {
-      border-color: #AD361E;
-      box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
+    border-color: #AD361E;
+    box-shadow: 0 0 10px #AD361E, 0 0 20px #AD361E, 0 0 30px #AD361E;
   }
 }
 
 
 /* Single Projects Page */
 
-.SinglePage{
- width: 100%;
- height: 1650px;
- background-color: black;
+.SinglePage {
+  width: 100%;
+  height: 1650px;
+  background-color: black;
 }
 
 .container4 {
@@ -682,21 +729,19 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: linear-gradient(
-    25deg,
-    rgba(173, 54, 30, 1) 0%,
-    rgba(30, 30, 30, 1) 86%
-  );
+  background: linear-gradient(25deg,
+      rgba(173, 54, 30, 1) 0%,
+      rgba(30, 30, 30, 1) 86%);
   transition: all 0.1s ease;
 }
 
-.ProductSingle{
+.ProductSingle {
   width: 500px;
   margin-left: -150px;
   margin-top: -20px;
 }
 
-.TitleSingle{
+.TitleSingle {
   color: #AD361E;
   font-size: 80px;
   margin-left: 450px;
@@ -704,7 +749,7 @@ body{
   letter-spacing: 15px;
 }
 
-.NikeAd{
+.NikeAd {
   font-size: medium;
   width: 400px;
   margin-left: 450px;
@@ -712,7 +757,7 @@ body{
   color: white;
 }
 
-.NikeDiscription{
+.NikeDiscription {
   color: #1E1E1E;
   margin-left: 450px;
   font-size: larger;
@@ -724,32 +769,39 @@ body{
   width: 300px;
   height: 80px;
   margin-top: -300px;
- margin-left: 750px;
-  background-color: transparent; /* Change this to the desired button color */
-  color: black; /* Change this to the desired text color */
+  margin-left: 750px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background-color: rgb(222, 157, 54);
+  background-color: #1E1E1E;
 }
 
 .button8:hover {
   color: white;
-  background-color: #1E1E1E; /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
 
 .button9 {
   width: 300px;
   height: 80px;
   margin-top: 120px;
- margin-left: 350px;
-  background-color: transparent; /* Change this to the desired button color */
-  color: White; /* Change this to the desired text color */
+  margin-left: 350px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: White;
+  /* Change this to the desired text color */
   font-size: 16px;
   border: 2px solid #AD361E;
   border-radius: 50px;
@@ -760,8 +812,369 @@ body{
 }
 
 .button9:hover {
-  color: black;
-  background-color: rgb(222, 157, 54); /* Change this to the desired background color on hover */
-  border-color: #fff; /* Change this to the desired border color on hover */
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Add smooth transition for the hover effect */
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+/* Form */
+
+.cardNow {
+  margin-bottom: 50px;
+  color:#fff;
+  transform-style: preserve-3d;
+  position: relative;
+  padding: 15px;
+  padding-top: 20px;
+  padding-left: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background: linear-gradient(25deg,
+      rgba(173, 54, 30, 1) 0%,
+      rgba(30, 30, 30, 1) 86%);
+  transition: all 0.1s ease;
+}
+
+.FormBack {
+  padding-top: 450px;
+  padding-left: 400px;
+}
+
+.form {
+  width: 800px;
+  height: 1000px;
+}
+
+.AdminInput {
+  height: 15;
+  width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url('../src/Pages/Images/path-to-your-texture-image.png');
+  background-size: 500px;
+  background-blend-mode: overlay;
+  color: white;
+  outline: none;
+}
+
+.button10 {
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button10:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+.table{
+  margin-left: -500px;
+}
+
+.button11 {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button11:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+
+
+/* login & signup */
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.SignUp {
+  margin-top: 20px;
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.SignUp:active {
+	transform: scale(0.95);
+}
+
+.SignUp:focus {
+	outline: none;
+}
+
+.SignUp.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.form2 {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+.container5 {
+	background-color: #1E1E1E;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 1200px;
+  height: 100%;
+}
+
+.form-container5 {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container5 {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container5.right-panel-active .sign-in-container3 {
+	transform: translateX(100%);
+}
+
+.sign-up-container5 {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+  height: 100%;
+}
+
+.container5.right-panel-active .sign-up-container5 {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container5 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container5.right-panel-active .overlay-container5{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #1E1E1E;
+	background: -webkit-linear-gradient(to right, #AD361E, #1E1E1E);
+	background: linear-gradient(to right, #AD361E, #1E1E1E);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container5.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container5.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container5 {
+	margin: 20px 0;
+}
+
+.social-container5 a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+/* update */
+
+.update{
+  padding-left: 65px;
+  width: 100%;
+  height: auto;
+  background-color: #1E1E1E;
+  padding-top: 350px;
+  background-image: url('../src/Pages/Images/Back.png');
+  background-size: 1481px;
+}
+
+.button12 {
+  width: 250px;
+  height: 60px;
+  margin-left: 55px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button12:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
 }
