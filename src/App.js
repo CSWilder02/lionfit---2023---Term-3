@@ -8,6 +8,7 @@ import Information from './Pages/information';
 import Single from './Pages/singleproduct';
 import BasicNavbar from './Components/navbar';
 import Login from './Pages/login'
+import Cart from './Pages/cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,10 +21,11 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/information' element={<Information />} />
         <Route path='/product' element={<Products />} />
-        <Route path='/singleproduct' element={<Single />} />
+        <Route path='/singleproduct/:id' element={<Single />} />
         <Route path='/form' element={<Form />} />
         <Route path='/update/:id' element={<FormUpdate />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
     
     </div>

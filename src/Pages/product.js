@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../App.css';
 
 
+
 import Card from './card';
 
 import Promo from './Images/Promo1.png'
@@ -19,6 +20,14 @@ import NeonBack from './Images/NeonBack.png'
 import Footer from './Images/Footer.png'
 
 function Product() {
+
+  
+  const handleViewInfoClick = (product) => {
+    setSelectedProduct(product);
+    history.push("/singleproduct"); // Navigate to the single product page
+  };
+
+
   const cards1 = [
     {
       imgSrc: require("./Images/Nike.png"),
@@ -63,7 +72,7 @@ function Product() {
       title: "RAZE",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["100", "120", "150"],
-      link: "LionFit/lionfit/src/Pages/singleproducts.js"
+      link: "LionFit/lionfit/src/Pages/singleproducts.js/"
     },
   ];
 
@@ -73,21 +82,21 @@ function Product() {
       title: "Body Attack",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["80", "100", "200"],
-      link: "LionFit/lionfit/src/Pages/singleproducts.js"
+      link: "LionFit/lionfit/src/Pages/singleproducts.js/"
     },
     {
       imgSrc: require("./Images/caseinchoc.png"),
       title: "USN Casien",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["80", "100", "250"],
-      link: "LionFit/lionfit/src/Pages/singleproducts.js"
+      link: "LionFit/lionfit/src/Pages/singleproducts.js/"
     }, 
     {
       imgSrc: require("./Images/CreatineMono.png"),
       title: "Fitness Standard",
       description: "Nike Dunk High is a high-top version...",
       sizes: ["80", "100", "150"],
-      link: "LionFit/lionfit/src/Pages/singleproducts.js"
+      link: "LionFit/lionfit/src/Pages/singleproducts.js/"
     },
   ];
 
@@ -131,7 +140,7 @@ function Product() {
           ))}
         </div>
 
-        <button className="button5">VIEW MORE</button>
+        <button className="button5">VIEW MORE </button>
 
         <div style={{width: 'auto', backgroundImage: `url(${NeonBack})`, backgroundSize: '1700px', height: '800px', backgroundRepeat: 'no-repeat'}}>
           <img style={{width: '600px', marginTop: '20px', marginLeft: '120px'}} src={Promo2} />
@@ -153,16 +162,16 @@ function Product() {
             {cards3.map((card, index) => (
               <Card
                 key={index}
-                imgSrc={card.imgSrc}
-                title={card.title}
-                description={card.description}
-                sizes={card.sizes}
-                link={card.link}
+                imgSrc={card.image}
+                title={card.name}
+                category={card.category}
+                price={card.price}
               />
             ))}
           </div>
 
-          <button className="button4">VIEW MORE</button>
+          <button onClick={() => handleViewInfoClick(product)}>View Info</button>
+          
         </div>
 
         <div>

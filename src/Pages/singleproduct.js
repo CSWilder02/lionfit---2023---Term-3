@@ -1,67 +1,54 @@
-import '../App';
-import React from "react";
-import Card from './card'
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from 'react-router-dom';
+import axios from 'axios';
 
+function SingleProduct() {
+  const { id } = useParams();
+  const [card, setCard] = useState({});
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
 
-import Nike from './Images/Nike.png';
+  useEffect(() => {
+    axios.get(`http://localhost:5000/api/form/${id}`)
+      .then(res => setCard(res.data))
+      .catch(err => console.error(err))
+  }, [id]); // Add 'id' as a dependency to re-fetch data when the 'id' changes
 
-function SingleProduct () {
+  const handleAddToCart = () => {
+    // Get the existing cart from session storage or initialize it as an empty array
+    const existingCart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
-    const cards1 = [
-        {
-          imgSrc: require("./Images/Nike.png"),
-          title: "Nike Dunk High",
-          description: "Nike Dunk High is a high-top version...",
-          sizes: ["38", "40", "42", "44"],
-          link: "LionFit/lionfit/src/Pages/singleproducts.js"
-        },
-        {
-          imgSrc: require("./Images/Nike.png"),
-          title: "Nike Dunk High",
-          description: "Nike Dunk High is a high-top version...",
-          sizes: ["38", "40", "42", "44"],
-          link: "LionFit/lionfit/src/Pages/singleproducts.js"
-        }, 
-        {
-          imgSrc: require("./Images/Nike.png"),
-          title: "Nike Dunk High",
-          description: "Nike Dunk High is a high-top version...",
-          sizes: ["38", "40", "42", "44"],
-          link: "LionFit/lionfit/src/Pages/singleproducts.js"
-        },
-      ];
+    // Check if the product is already in the cart
+    const isProductInCart = existingCart.some((item) => item.id === id);
 
-    return (
+    if (!isProductInCart) {
+      // If the product is not in the cart, add it
+      existingCart.push({ id, ...card }); // Use 'card' instead of 'product'
 
-<div className='SinglePage'>
-<div className="container4" >
-<img className='ProductSingle' src={Nike} />
-<div >
-  <h1 className='TitleSingle'>NIKE</h1>
-  <p className='NikeAd'>The Nike Dunk High is a stylish and versatile high-top shoe that combines fashion with functionality. Designed for sports and activities like running, this shoe is a perfect blend of comfort and performance. Nike Dunk High strikes a balance between providing support and allowing for agility during physical activities.</p>
-  <p className='NikeDiscription'>Weight: 20 ounces <br /> Rating: 4.5 out 5</p>
-  </div>
-  </div>
-  <button className="button9">BACK</button>
-  <button style={{marginTop: '-250px'}} className="button8">PURCHASE</button>
+      // Update session storage with the updated cart
+      sessionStorage.setItem("cart", JSON.stringify(existingCart));
 
-  <h1 style={{fontSize: '40px', marginTop: '160px', marginLeft: '-700px'}} className="neon-text">SIMILAR PRODUCTS</h1>
-  <div className="container" >
-          {cards1.map((card, index) => (
-            <Card
-              key={index}
-              imgSrc={card.imgSrc}
-              title={card.title}
-              description={card.description}
-              sizes={card.sizes}
-              link={card.link}
-            />
-          ))}
+      // Set the state to indicate that the product has been added to the cart
+      setIsAddedToCart(true);
+    }
+  };
+
+  return (
+    <div className='SinglePage'>
+      <div className="container4">
+        <img className='ProductSingle' src={card.image} alt={card.name} />
+        <div>
+          <h1 className='TitleSingle'>{card.name}</h1>
+          <p className='NikeAd'>{card.category}</p>
+          <p className='NikeDiscription'>
+            Price: R {card.price} <br />
+            Stock: {card.stock} in store
+          </p>
         </div>
-  
-</div>
-
-    );
+      </div>
+      <button className="button9" onClick={handleAddToCart}>ADD TO CART</button>
+      <Link to="/cart" className='button8'>View Cart</Link>
+    </div>
+  );
 }
 
 export default SingleProduct;
