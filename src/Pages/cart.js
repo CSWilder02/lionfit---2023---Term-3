@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Background from '../Pages/Images/Back.png';
+
 function Cart() {
   const [cartItems, setCartItems] = useState(
     JSON.parse(sessionStorage.getItem("cart")) || []
@@ -16,18 +18,18 @@ function Cart() {
 
   return (
    
-<div>
+<div className="cartBack" style={{backgroundImage: `url(${Background})`, backgroundSize: '1481px', backgroundRepeat: 'no-repeat', height: '3125px', backgroundColor: 'black'}}>
 <div className="CartPage">
-      <h1>Your Cart</h1>
-      <ul>
+      <h1 className="CartTitle">Your Cart</h1>
+      <ul >
         {cartItems.map((item) => (
           <li key={item.id}>
-            <img src={item.image} alt={item.name} />
-            <div>
-              <h3>{item.name}</h3>
+            <img style={{width: '300px', marginTop: '50px', marginLeft: '-110px'}} src={item.image} alt={item.name} />
+            <div style={{marginLeft: '220px', marginTop: '-250px'}} className="productCart">
+              <h3 style={{marginBottom: '25px'}}>{item.name}</h3>
               <p>Category: {item.category}</p>
               <p>Price: {item.price}</p>
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
+              <button className="removeCart" onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
           </li>
         ))}
@@ -35,23 +37,27 @@ function Cart() {
     </div>
 
 <div className="CheckoutDetails">
-<h2>Checkout Details</h2>
+<h2 style={{marginBottom: '30px'}}>Checkout Details</h2>
 {/* Add your card details form or component here */}
 {/* For example: */}
-<form>
+<form className="checkout">
   <label>
     Card Number:
-    <input type="text" />
+    <input style={{ width: '500px', height: '50px', borderRadius: '5px', border: '1px solid white', backgroundColor: 'black', color: 'white', paddingLeft: '15px', marginBottom: '30px' }} type="text" />
   </label>
+  <br/>
   <label>
     Expiry Date:
-    <input type="text" />
+    <input style={{ width: '500px', height: '50px', borderRadius: '5px', border: '1px solid white', backgroundColor: 'black', color: 'white', paddingLeft: '15px', marginBottom: '30px' }} type="text" />
   </label>
+  <br/>
   <label>
     CVV:
-    <input type="text" />
+    <br/>
+    <input style={{ width: '500px', height: '50px', borderRadius: '5px', border: '1px solid white', backgroundColor: 'black', color: 'white', paddingLeft: '15px', marginBottom: '30px' }} type="text" />
   </label>
-  <button>Submit Order</button>
+  <br/>
+  <button className="button15">Submit Order</button>
 </form>
 </div>
 

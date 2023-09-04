@@ -4,7 +4,7 @@ import '../App.css';
 import { Link } from 'react-router-dom';
 
 
-export default function Card({ imgSrc, title, description, sizes, link }) {
+export default function Card({id ,imgSrc, title, description, sizes, link }) {
   const [xRotation, setXRotation] = useState(0);
   const [yRotation, setYRotation] = useState(0);
   const cardRef = useRef(null);
@@ -24,6 +24,29 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
     setXRotation((y / height) * mult);
     setYRotation((x / width) * mult);
   }
+
+  const [card, setCard] = useState({});
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
+
+  const handleAddToCart = (id) => {
+    // Get the existing cart from session storage or initialize it as an empty array
+    const existingCart = JSON.parse(sessionStorage.getItem("usercart")) || [];
+  
+    // Check if the product is already in the cart
+    const isProductInCart = existingCart.some((item) => item.id === id);
+  
+    if (!isProductInCart) {
+      // If the product is not in the cart, add it
+      existingCart.push({ id, ...card });
+  
+      // Update session storage with the updated cart
+      sessionStorage.setItem("usercart", JSON.stringify(existingCart));
+  
+      // Set the state to indicate that the product has been added to the cart
+      setIsAddedToCart(true);
+    }
+  };
+  
 
   function handleMouseEnter() {
     const img = imgRef.current;
@@ -82,11 +105,14 @@ export default function Card({ imgSrc, title, description, sizes, link }) {
         ))}
       </ul>
       <div className="button-box" ref={purchaseRef}>
-        <Link to="/singleproduct">
+        <Link to="/productSingle">
           <button className="purchase">
             VIEW INFO
           </button>
         </Link>
+        
+        <button className="button13" onClick={() => handleAddToCart(id)}>ADD TO CART</button>
+      
 
       </div>
     </div>

@@ -10,6 +10,8 @@ import BasicNavbar from './Components/navbar';
 import Login from './Pages/login'
 import Cart from './Pages/cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductSingle from './Pages/productSingle'
+import UserCart from './Pages/usercart'
 
 
 
@@ -26,6 +28,8 @@ function App() {
         <Route path='/update/:id' element={<FormUpdate />} />
         <Route path='/login' element={<Login />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path="/productSingle/:id" component={ProductSingle} />
+        <Route path='/usercart' component={UserCart} />
       </Routes>
     
     </div>

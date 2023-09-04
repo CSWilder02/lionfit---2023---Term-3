@@ -1178,3 +1178,161 @@ input {
   transition: background-color 0.3s ease, border-color 0.3s ease;
   /* Add smooth transition for the hover effect */
 }
+
+/* Productr Page Cart & Product Page card */
+
+.button13 {
+  width: 100%;
+  height: 55px;
+  margin-top: 15px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button13:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+
+.button14 {
+  width: 100%;
+  height: 55px;
+  margin-top: 15px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button14:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+.cartBack{
+  height: 1000px;
+  background: -webkit-linear-gradient(to right, #AD361E, #1E1E1E);
+	background: linear-gradient(to right, #AD361E, #1E1E1E);
+}
+
+.CartPage{
+  position: absolute;
+  color: #fff;
+  width: 50%;
+  padding-top: 13%;
+  padding-left: 10%;
+}
+
+.CheckoutDetails{
+ color: #fff;
+ position: fixed;
+ width: 40%;
+ height: 525px;
+ margin-top: 11%;
+ margin-left: 57%;
+ padding-top: 40px;
+ background: white;
+   background: -webkit-linear-gradient(to right, #AD361E, #1E1E1E);
+   background: linear-gradient(to right, rgba(173, 54, 30, 0.5), rgba(30, 30, 30, 0.3)); /* 50% opacity gradient background */
+  border-radius: 20px;
+}
+
+.checkout{
+  padding-left: 50px;
+}
+
+.CartTitle{
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E,
+  0 0 80px #AD361E, 0 0 100px #AD361E, 0 0 150px #AD361E;
+animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes CartTitle-glow {
+from {
+  opacity: 0.5;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E,
+    0 0 80px #AD361E, 0 0 100px #AD361E, 0 0 150px #AD361E;
+}
+
+to {
+  opacity: 1;
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #AD361E, 0 0 70px #AD361E, 0 0 80px #AD361E,
+    0 0 100px #AD361E, 0 0 150px #AD361E, 0 0 300px #AD361E;
+}
+}
+
+.button15 {
+  margin-left: 20%;
+  width: 50%;
+  height: 55px;
+  margin-top: 15px;
+  background-color: transparent;
+  /* Change this to the desired button color */
+  color: #AD361E;
+  /* Change this to the desired text color */
+  font-size: 16px;
+  border: 2px solid #AD361E;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.button15:hover {
+  color: white;
+  background-color: #1E1E1E;
+  /* Change this to the desired background color on hover */
+  border-color: #fff;
+  /* Change this to the desired border color on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* Add smooth transition for the hover effect */
+}
+
+.productCart{
+  border-bottom: 2px solid white;
+}
+
+.removeCart{
+  margin-bottom: 50px;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 30px;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: rgba(248, 177, 60, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
