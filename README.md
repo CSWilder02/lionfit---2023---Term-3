@@ -1,70 +1,251 @@
-# Getting Started with Create React App
+# LionFit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- Repository Information & Links-->
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![GitHub repo size](https://img.shields.io/github/repo-size/YourName/NameOfRepo)
+![GitHub watchers](https://img.shields.io/github/watchers/YourName/NameOfRepo)
+![GitHub language count](https://img.shields.io/github/languages/count/YourName/NameOfRepo)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/YourName/NameOfRepo)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<!-- HEADER SECTION -->
+<h5 align="center" style="padding:0;margin:0;">YourName</h5>
+<h5 align="center" style="padding:0;margin:0;">Your Student Num</h5>
+<h6 align="center">DV200 - Term 1 | 2022</h6>
+</br>
+<p align="center">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <a href="https://github.com/YourName/NameOfRepo">
+    <img src="pokemonproject/src/Images/Char.png" alt="Logo" width="140" height="140">
+  </a>
+  
+  <h3 align="center">Name of website</h3>
 
-### `npm run build`
+  <p align="center">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ Short Description of website
+   <br>
+    <i>more about website</i> 
+    
+   <br />
+   <br />
+    ·
+    <a href="https://github.com/YourName/Pokemon/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/YourName/Pokemon/issues">Request Feature</a>
+</p>
+<!-- TABLE OF CONTENTS -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [About the Project](#about-the-project)
+  * [Project Description](#project-description)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [How to install](#how-to-install)
+* [Features and Functionality](#features-and-functionality)
+* [Concept Process](#concept-process)
+   * [Ideation](#ideation)
+   * [Wireframes](#wireframes)
+   * [Custom UI](#user-flow)
+* [Development Process](#development-process)
+   * [Implementation Process](#implementation-process)
+        * [Highlights](#highlights)
+        * [Challenges](#challenges)
+   * [Future Implementation](#peer-reviews)
+* [Final Outcome](#final-outcome)
+    * [Mockups](#mockups)
+    * [Video Demonstration](#video-demonstration)
+* [Conclusion](#conclusion)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-### `npm run eject`
+<!--PROJECT DESCRIPTION-->
+## About the Project
+<!-- header image of project -->
+![image1](pokemonproject/src/Images/Ideation/intro.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Project Description
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Add description here 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [React](https://reactjs.org/)
+* [Charts.js](https://www.chartjs.org/)
+* [PokeApi](https://pokeapi.co/)
 
-## Learn More
+<!-- GETTING STARTED -->
+<!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+Ensure that you have the latest version of [NPM](https://www.npmjs.com/) installed on your machine. The [GitHub Desktop](https://desktop.github.com/) program will also be required.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### How to install
 
-### Analyzing the Bundle Size
+### Installation
+Here are a couple of ways to clone this repo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. GitHub Desktop </br>
+Enter `https://github.com/YourName/Pokemon.git` into the URL field and press the `Clone` button.
 
-### Making a Progressive Web App
+2. Clone Repository </br>
+Run the following in the command-line to clone the project:
+   ```sh
+   git clone https://github.com/YourName/Pokemon.git
+   ```
+    Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Install Dependencies </br>
+Run the following in the command-line to install all the required dependencies:
+   ```sh
+   npm install
+   ```
 
-### Advanced Configuration
+4. An API key is not required
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- FEATURES AND FUNCTIONALITY-->
+<!-- You can add the links to all of your imagery at the bottom of the file as references -->
+## Features and Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- note how you can use your gitHub link. Just make a path to your assets folder -->
+![image2](pokemonproject/src/Images/mockups/mockup1.png)
 
-### `npm run build` fails to minify
+
+### Name Feature 
+About Feature
+
+
+### Name Feature 
+About Feature
+
+
+### Name Feature 
+About Feature
+
+
+### Name Feature 
+About Feature
+
+
+
+
+
+<!-- CONCEPT PROCESS -->
+<!-- Briefly explain your concept ideation process -->
+<!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
+## Concept Process
+
+The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
+
+### Ideation
+speak about planning.
+
+
+![image5](pokemonproject/src/Images/Ideation/concept.png)
+<br>
+<!-- ![image6][image6] -->
+
+### Wireframes
+explain process
+
+![image7](pokemonproject/src/Images/Ideation/wireframes.png)
+
+### Custom UI
+explain process
+
+
+![image8](pokemonproject/src/Images/Ideation/process.png)
+
+<!-- DEVELOPMENT PROCESS -->
+## Development Process
+
+The `Development Process` is ....
+
+Explain process
+
+
+### Implementation Process
+<!-- stipulate all of the functionality you included in the project -->
+<!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
+
+* Utilized React `Charts.JS` dependency for Data visualization
+* Implemented Routing with `React-Router v6`.
+* API End Point: https://pokeapi.co/ 
+
+
+#### Highlights
+<!-- stipulated the highlight you experienced with the project -->
+* List
+* Highlights
+* Here
+
+#### Challenges
+<!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
+* List
+* Challenges
+* Here
+
+
+
+### Future Implementation
+<!-- stipulate functionality and improvements that can be implemented in the future. -->
+
+* In future I would like to....
+
+<!-- MOCKUPS -->
+## Final Outcome
+
+### Mockups
+
+![image9](pokemonproject/src/Images/mockups/mockup2.png)
+<br>
+![image10](pokemonproject/src/Images/mockups/mockup3.png)
+
+<!-- VIDEO DEMONSTRATION -->
+### Video Demonstration
+
+To see a run through of the application, click below:
+
+[View Demonstration](pokemonproject/src/Assets/video/demonstration.mp4)
+
+
+See the [open issues](https://github.com/YourName/Pokemon/issues) for a list of proposed features (and known issues).
+
+<!-- AUTHORS -->
+## Authors
+
+* **YourName** - [YourName](https://github.com/YourName)
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.\
+
+<!-- LICENSE -->
+## Contact
+
+* **YourName** - [YourNum@virtualwindow.co.za](mailto:YourNum@virtualwindow.co.za) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
+* **Project Link** - https://github.com/YourName/Pokemon
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+<!-- all resources that you used and Acknowledgements here -->
+<!-- * [Resource Name](path/to/resource)
+* [Resource Name](path/to/resource)
+* [Resource Name](path/to/resource)
+* [Resource Name](path/to/resource)
+* [Resource Name](path/to/resource) -->
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
