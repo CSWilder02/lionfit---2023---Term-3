@@ -27,7 +27,7 @@
 
   <p align="center">
 
- Short Description of website
+ Lionfit is more than just a website; it's a passion project meticulously developed to address the unique needs of gym enthusiasts and fitness aficionados. Crafted with unwavering commitment, Lionfit.com stands as a testament to the profound dedication to health and wellness.
    <br>
     <i>more about website</i> 
     
