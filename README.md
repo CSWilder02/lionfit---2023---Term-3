@@ -20,7 +20,7 @@
 <p align="center">
 
   <a href="https://github.com/CSWilder02/lionfit---2023---Term-3.git">
-    <img src="LionFit/lionfit/src/Components/logo.png" alt="Logo" width="150" height="150">
+    <img src="LionFit/lionfit/lionfit/src/Components/logo.png" alt="Logo" width="150" height="150">
   </a>
   
   <h3 align="center">LIONFIT</h3>
@@ -73,13 +73,16 @@
 
 ### Project Description
 
-Add description here 
+Lionfit is the embodiment of a vision to facilitate and elevate the fitness journeys of individuals worldwide. Developed with passion, expertise, and a commitment to excellence, our website is your trusted companion on the path to a healthier, fitter, and more empowered you. Welcome to Lionfit.com, where fitness meets its true potential. 
 
 ### Built With
 
 * [React](https://reactjs.org/)
-* [Charts.js](https://www.chartjs.org/)
-* [PokeApi](https://pokeapi.co/)
+* [Cards]
+* [Mongodb]
+* [Insomnia]
+* [JavaScript]
+* [Bootstrap]
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -123,19 +126,37 @@ Run the following in the command-line to install all the required dependencies:
 ![image2](pokemonproject/src/Images/mockups/mockup1.png)
 
 
-### Name Feature 
-About Feature
+### CRUD 
+The CRUD functionality allows the admin to add products to their mongo database by using CRUD - Create, 
+Read, Update & Delete
+
+CREATE:
+![image1](pokemonproject/src/Images/Ideation/intro.png)
+
+READ: 
+![image1](pokemonproject/src/Images/Ideation/intro.png)
+
+UPDATE:
+![image1](pokemonproject/src/Images/Ideation/intro.png)
+
+DELETE:
+![image1](pokemonproject/src/Images/Ideation/intro.png)
+
+### ADMIN
+The Admin page is where the admin users can add their product aswell as see the orders of the clients that has purchased their products and also remove products that they has send out, to keep track of all their products sold
+
+ADMIN:
+![image1](pokemonproject/src/Images/Ideation/intro.png)
+
+ORDERS:
+![image1](pokemonproject/src/Images/Ideation/intro.png)
 
 
-### Name Feature 
-About Feature
+### PRODUCT 
+Tthe Product Page allows
 
 
-### Name Feature 
-About Feature
-
-
-### Name Feature 
+### LOGIN 
 About Feature
 
 
