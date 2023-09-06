@@ -34,9 +34,9 @@
    <br />
    <br />
     ·
-    <a href="https://github.com/YourName/Pokemon/issues">Report Bug</a>
+    <a href="https://github.com/CSWilder02/lionfit---2023---Term-3.git">Report Bug</a>
     ·
-    <a href="https://github.com/YourName/Pokemon/issues">Request Feature</a>
+    <a href="https://github.com/CSWilder02/lionfit---2023---Term-3.git">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -100,22 +100,35 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/YourName/Pokemon.git` into the URL field and press the `Clone` button.
+Enter `"https://github.com/CSWilder02/lionfit---2023---Term-3.git"` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/YourName/Pokemon.git
+   "https://github.com/CSWilder02/lionfit---2023---Term-3.git"
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
 3. Install Dependencies </br>
-Run the following in the command-line to install all the required dependencies:
+Run the following in the command-line to install all the required dependencies in Server:
    ```sh
-   npm install
-   ```
+   cd lionfit
+    ```
+   ```sh
+   cd ./Server
+    ```
 
-4. An API key is not required
+   ```sh
+   npm install bcrypt cors dotenv express joi joi-password-complexity jsonwebtoken mongoose nodemon
+    ```
+   
+   Run the following in the command-line to install all the required dependencies in User Side:
+   ```sh
+   npm install axios react-router-dom react-bootstrap bootstrap
+   ```
+     Run the following in the command-line to install all the required dependencies in User Side:
+  
+5. An API key is not required
 
 
 <!-- FEATURES AND FUNCTIONALITY-->
