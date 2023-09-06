@@ -20,7 +20,7 @@
 <p align="center">
 
   <a href="https://github.com/CSWilder02/lionfit---2023---Term-3.git">
-    <img src="LionFit/lionfit/lionfit/src/Components/logo.png" alt="Logo" width="150" height="150">
+    <img src="LionFit\lionfit\lionfit\src\Components\logo.png" alt="Logo" width="150" height="150">
   </a>
   
   <h3 align="center">LIONFIT</h3>
