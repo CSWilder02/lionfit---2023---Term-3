@@ -60,10 +60,10 @@ function BasicNavbar() {
           <Nav.Link as={Link} to="/information" style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }}>
             ABOUT
           </Nav.Link>
-          <Nav.Link as={Link} to="/form" style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }}>
+          <Nav.Link as={Link} to="/login" style={{ color: 'white', marginLeft: '90px', paddingTop: '20px', textDecoration: 'none' }}>
             ADMIN
           </Nav.Link>
-          <Nav.Link as={Link} to="/usercart" style={{ color: 'white', marginLeft: '60px', paddingTop: '0px', textDecoration: 'none' }}>
+          <Nav.Link as={Link} to="/cart" style={{ color: 'white', marginLeft: '60px', paddingTop: '0px', textDecoration: 'none' }}>
             <img
               src={cart}
               alt="Time"

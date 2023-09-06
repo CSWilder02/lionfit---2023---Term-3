@@ -6,20 +6,6 @@ function ProductSingle() {
   const [card, setCard] = useState({});
   const [isAddedToCart, setIsAddedToCart] = useState(false);
 
-  // Fetch product data when the component mounts
-  useEffect(() => {
-    // Fetch product data based on the 'id' parameter
-    fetchProductData(id)
-      .then((data) => {
-        // Set the 'card' state with the fetched data
-        setCard(data);
-      })
-      .catch((error) => {
-        // Handle the error (e.g., show an error message)
-        console.error(error);
-      });
-  }, [id]);
-
   // Function to handle adding the product to the cart
   const handleAddToCart = () => {
     // Get the existing cart from session storage or initialize it as an empty array
@@ -39,6 +25,17 @@ function ProductSingle() {
       setIsAddedToCart(true);
     }
   };
+
+  useEffect(() => {
+    axios.get(`http://localhost:5000/api/form/${id}`)
+      .then((data) => {
+        console.log(data); // Check if data is being fetched
+        setCard(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, [id]);
 
   return (
     <div className='SinglePage'>

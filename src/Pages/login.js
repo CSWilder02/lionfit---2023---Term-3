@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios'; // Make sure axios is installed using `npm install axios`
 import '../App.css';
-import Back from './Images/Back.png';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [isSignUpActive, setIsSignUpActive] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [token, setToken] = useState('');
+  const [name, setName] = useState('');
 
   const toggleForm = () => {
     setIsSignUpActive((prevState) => !prevState);
@@ -16,7 +17,23 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/login', { email, password });
+    
+      const response = await axios.get('/api/login', { email, password });
+      const { token } = response.data;
+      setToken(token);
+      // Store the token in localStorage or a secure cookie
+      localStorage.setItem('token', token); // Store token in localStorage (not secure)
+      // You should implement a more secure way to store tokens, such as using HttpOnly cookies
+    } catch (error) {
+      console.error('Login error:', error);
+    }
+  };
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    try {
+    
+      const response = await axios.post('http://localhost:5000/api/signup', { email, password, name });
       const { token } = response.data;
       setToken(token);
       // Store the token in localStorage or a secure cookie
@@ -30,7 +47,7 @@ function Login() {
   return (
     <div
       style={{
-        backgroundImage: `url(${Back})`,
+    
         backgroundSize: '100%',
         backgroundColor: 'black',
         position: 'relative',
@@ -58,7 +75,12 @@ function Login() {
               </a>
             </div>
             <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" />
+            <input 
+             type="text"
+             placeholder="Name"
+             value={name}
+             onChange={(e) => setName(e.target.value)}
+             />
             <input
               type="email"
               placeholder="Email"
@@ -71,7 +93,7 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button className="SignUp" onClick={handleSubmit}>
+            <button className="SignUp" onClick={handleSignup}>
               Sign Up
             </button>
           </form>
@@ -105,9 +127,11 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <a href="#">Forgot your password?</a>
-            <button type="submit" className="SignUp">
-              Sign In
-            </button>
+            <Link to="/form">
+      <button type="button" className="SignUp">
+        Sign In
+      </button>
+    </Link>
           </form>
         </div>
         <div className="overlay-container5">

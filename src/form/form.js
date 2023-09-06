@@ -45,7 +45,13 @@ function Form() {
   return (
 
     <div style={{ backgroundImage: `url(${Background})`, backgroundSize: '1481px', width: '1481px', height: '3000px', marginTop: '-20px', backgroundRepeat: 'no-repeat', backgroundColor: 'black' }} className="FormBack">
+      
+      <div className='OrderFilter'>
+      <Link style={{textDecoration: 'none', color: 'white', fontSize: '20px'}} to="/orders">Orders</Link>
+    </div>
+      
       <h1 className="Info NeonText" style={{ position: 'absolute', top: '200px', marginLeft: '100px' }}>NEW PRODUCTS</h1>
+      
       <form onSubmit={addProduct}>
         <div className="form">
           <h1 style={{ color: 'white', fontWeight: '10%', fontSize: '30px', marginBottom: '20px' }} >Add Products</h1>

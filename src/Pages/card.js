@@ -75,6 +75,8 @@ export default function Card({id ,imgSrc, title, description, sizes, link }) {
     purchase.style.transform = "translateZ(0px)";
   }
 
+  
+
   return (
     <div
       className="card"
@@ -105,11 +107,9 @@ export default function Card({id ,imgSrc, title, description, sizes, link }) {
         ))}
       </ul>
       <div className="button-box" ref={purchaseRef}>
-        <Link to="/productSingle">
-          <button className="purchase">
-            VIEW INFO
-          </button>
-        </Link>
+      <Link to={`/singleproduct/${id}`} className="purchase">
+  VIEW INFO
+</Link>
         
         <button className="button13" onClick={() => handleAddToCart(id)}>ADD TO CART</button>
       

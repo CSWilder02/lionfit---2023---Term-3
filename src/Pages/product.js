@@ -3,6 +3,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import '../App.css';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 // Assuming you have a Card component defined somewhere
 import Card from './card'; // Update the path to your Card component
@@ -17,7 +19,21 @@ import Bottle from './Images/Bottle.png';
 import Equipment from './Images/Equipment.png';
 
 function Product() {
+
+  const [top3, setTop3] = useState([])
+
+  useEffect(() =>{
+    axios.get('http://localhost:5000/api/getThreeDocuments')
+    .then(response => {
+        setTop3(response.data)
+       console.log(response.data);
+      })
+    .catch(error => {
+      console.error(error);
+     })
+  },[])
   // Your card data
+  const sizes = ["80", "120", "200"]
   const cards1 = [
     {
       id: '1',
@@ -136,14 +152,14 @@ function Product() {
         </div>
 
         <div className="container">
-          {cards1.map((card, index) => (
+          {top3.map((card, index) => (
             <Card
-              id={index}
-              imgSrc={card.imgSrc}
-              title={card.title}
-              description={card.description}
-              sizes={card.sizes}
-              link={card.link}
+              id={card._id}
+              imgSrc={card.image}
+              title={card.name}
+              description={card.category}
+              sizes={sizes}
+              link={card._id}
             />
           ))}
         </div>
@@ -161,7 +177,7 @@ function Product() {
                 imgSrc={card.imgSrc}
                 title={card.title}
                 description={card.description}
-                sizes={card.sizes}
+                sizes={sizes}
                 link={card.link}
               />
             ))}
@@ -173,7 +189,7 @@ function Product() {
                 imgSrc={card.imgSrc}
                 title={card.title}
                 description={card.description}
-                sizes={card.sizes}
+                sizes={sizes}
                 link={card.link}
               />
             ))}
