@@ -126,8 +126,17 @@ Run the following in the command-line to install all the required dependencies i
    ```sh
    npm install axios react-router-dom react-bootstrap bootstrap
    ```
-     Run the following in the command-line to install all the required dependencies in User Side:
-  
+   ```sh
+   cd lionfit
+    ```
+   ```sh
+   cd lionfit
+    ```
+   ```sh
+   npm start
+    ```
+
+
 5. An API key is not required
 
 
