@@ -20,10 +20,10 @@
 <p align="center">
 
   <a href="https://github.com/CSWilder02/lionfit---2023---Term-3.git">
-    <img src="pokemonproject/src/Images/Char.png" alt="Logo" width="140" height="140">
+    <img src="LionFit\lionfit\src\Components\logo.png" alt="Logo" width="140" height="140">
   </a>
   
-  <h3 align="center">Name of website</h3>
+  <h3 align="center">LIONFIT</h3>
 
   <p align="center">
 
